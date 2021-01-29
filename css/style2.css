@@ -9,4 +9,63 @@ use float to make something locate itself on the right or left
 body {
   padding: 30px;
   background-color: #ffffff;
+  background-image: url("https://hawkesburyit.com.au/wp-content/uploads/2016/04/website-background.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex; /* this is the flexbox model. It adds responsive design to its items */
+  flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+  align-items: center; /* These next two properties center the flex items */
+  justify-content: center;
 }
+
+#main-title {
+  color:rgb(251, 227, 87);
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+
+
+}
+
+#style-selector {
+  position: fixed;
+  left: 0;
+  bottom:0;
+  top: 0;
+  height:100%
+
+}
+
+#style-selector ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(251, 227, 87);
+  font-weight:bold;
+}
+
+#style-selector li {
+  float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#style-selector li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style-selector li a:hover {
+  background-color: rgb(46, 46, 251);
+  color:rgb(251, 227, 87);
+}
+
+
+
+
+
