@@ -78,7 +78,7 @@ h2 {
 }
 
 #faculty {
-  background-color:none;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
