@@ -6,6 +6,12 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+/*
+  This CSS rule targets the body element of the HTML.
+  In terms of the impact of the rule and how it differs from the original,
+we added an image to the background of webpage and made it so that the image stays fixed on the page
+as a person scrolls through it.
+*/
 body {
   padding: 30px;
   background-color: #ffffff;
@@ -19,23 +25,31 @@ body {
   justify-content: center;
 }
 
+/*
+  This CSS rule targets the main title of the webpage.
+  In terms of the impact of the rule and how it differs from the original, we changed
+the color, size, and font of the title.
+*/
 #main-title {
   color:rgb(251, 227, 87);
   font-family: "Audiowide", sans-serif;
   text-align: center;
   font-size: 3rem;
 
-
 }
+
+
+
 
 #style-selector {
   position: fixed;
   left: 0;
-  bottom:0;
+  right:0;
   top: 0;
   height:100%
 
 }
+
 
 #style-selector ul {
   list-style-type: none;
@@ -43,23 +57,33 @@ body {
   padding: 0;
   overflow: hidden;
   background-color:rgb(251, 227, 87);
-  font-weight:bold;
+
 }
 
 #style-selector li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: right; /*explore what happens if this is 'right' instead*/
 }
 
+/*
+  This CSS rule targets the text in the navigation bar when it is not being hovered over.
+  In terms of the impact of the rule and how it differs from the original, we changed the text to a
+  different front and also made it blue.
+*/
 #style-selector li a {
   display: block;
-  color: blue;
   text-align: center;
+  color:blue;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
+  font-family: "Audiowide", sans-serif;
 
 }
 
-/* Change the link background color to #000 (black) on hover */
+/* This CSS rule targets the text in the nav bar when someone is hovering over it.
+  In terms of the impact of the rule and how it differs from the original, we changed it so that
+  when someone hovers over one of the nav bar options, the colors get swapped, so the background
+  becomes blue and the text becomes yellow.
+*/
 #style-selector li a:hover {
   background-color: rgb(46, 46, 251);
   color:rgb(251, 227, 87);
