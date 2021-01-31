@@ -16,7 +16,7 @@ body {
   padding: 30px;
   background-color: #ffffff;
   background-image: url("https://hawkesburyit.com.au/wp-content/uploads/2016/04/website-background.gif");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex; /* this is the flexbox model. It adds responsive design to its items */
@@ -24,6 +24,21 @@ body {
   align-items: center; /* These next two properties center the flex items */
   justify-content: center;
 }
+
+@media (max-width:960px) {
+  body {
+    background-image: none;
+    background-color: rgb(4, 89, 235);
+  }
+}
+@media (max-width:960px) {
+  #tools {
+    position:relative;
+  }
+}
+
+
+
 
 /*
   This CSS rule targets the main title of the webpage.
@@ -76,7 +91,7 @@ h2 {
   justify-content: center;
   align-content: center;
   border:none;
-  max-width:50em;
+  max-width: 50%;
 }
 
 /*
@@ -100,6 +115,13 @@ to the elements both above and below it.
   padding: 30px;
 }
 
+#tools {
+  background-color: rgb(251, 227, 87);
+  font-family: "Teko", serif;
+  position:fixed;
+  right:0;
+  top:10%;
+}
 
 #faculty-list {
   padding-left: 0;
@@ -123,6 +145,30 @@ to the elements both above and below it.
 .office {
   font-family: "Marcellus", serif;
   color:rgb(5, 188, 255);
+}
+
+.office {
+  font-family: "Marcellus", serif;
+}
+
+.local {
+  color:rgb(35, 101, 255);
+}
+
+.cloud {
+  color:black;
+}
+
+.version-control{
+  font-style:italic;
+}
+
+.ide{
+  font-weight:bold;
+}
+
+.testing{
+  font-family:"Lucida Console", "Courier New", monospace;
 }
 
 img.pic {
@@ -179,7 +225,12 @@ img.pic {
   color:rgb(251, 227, 87);
 }
 
-
+#validation {
+  font-size: 0.8rem;
+  background-color: rgb(251, 227, 87);
+  padding: 25px;
+  border:double;
+}
 
 
 
