@@ -38,8 +38,31 @@ the color, size, and font of the title.
 
 }
 
+h2 {
+  font-family: "Teko", serif;
+  color:rgb(35, 101, 255);
+  font-size: 170%;
+}
 
+.section {
+  border-radius: 0px;
+  padding: 20px;
+  border: 5px double;
+  border-color: black;
+  margin: 10px;
+  max-width: 30em;
+}
 
+#courses {
+  background-color: rgb(251, 227, 87);
+  font-family: "Poppins", serif;
+
+}
+
+#pslo {
+  background-color: #d5d6d2;
+  font-family: "Poppins", serif;
+}
 
 #style-selector {
   position: fixed;
