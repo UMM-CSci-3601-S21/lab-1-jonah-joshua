@@ -38,13 +38,18 @@ the color, size, and font of the title.
 
 }
 
+/*
+  This CSS rule targets the headers of the html page.
+  In terms of the impact of the rule and how it differs from the original, we changed
+  the headers font, color, and adjusted the size.
+  */
 h2 {
   font-family: "Teko", serif;
   color:rgb(35, 101, 255);
   font-size: 170%;
 }
 
-.section {
+.section { /* This is an example of a class */
   border-radius: 0px;
   padding: 20px;
   border: 5px double;
@@ -53,7 +58,7 @@ h2 {
   max-width: 30em;
 }
 
-#courses {
+#courses { /* This is an example of an id */
   background-color: rgb(251, 227, 87);
   font-family: "Poppins", serif;
 
@@ -62,6 +67,68 @@ h2 {
 #pslo {
   background-color: #d5d6d2;
   font-family: "Poppins", serif;
+}
+
+#faculty {
+  background-color:none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border:none;
+  max-width:50em;
+}
+
+/*
+  This rule targets the header for the faculty page.
+  This is a completely new CSS rule that is not present in the original.
+  In terms of the impact of the rule, it changes the color, font size, and margins of the header.
+  We reduced the margins for the both the top and bottom of the header so that it would be closer
+to the elements both above and below it.
+*/
+#faculty > h2{
+  text-align:center;
+  color: rgb(251, 227, 87);
+  font-size: 200%;
+  margin-bottom: -5%;
+  margin-top: -1%;
+}
+
+#faculty > ul > li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
+.name {
+  font-family: "Audiowide", serif;
+  font-size: 2rem;
+  color: rgb(251, 227, 87);
+
+}
+
+.office {
+  font-family: "Marcellus", serif;
+  color:rgb(5, 188, 255);
+}
+
+img.pic {
+  width: 100%;
+  border: 8px solid rgb(251, 227, 87);
+  border-radius:100%;
 }
 
 #style-selector {
@@ -74,7 +141,7 @@ h2 {
 }
 
 
-#style-selector ul {
+#style-selector ul { /* This an example of nesting.*/
   list-style-type: none;
   margin: 0;
   padding: 0;
