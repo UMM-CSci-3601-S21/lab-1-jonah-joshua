@@ -25,6 +25,12 @@ body {
   justify-content: center;
 }
 
+/* This CSS rule targets the background of the webpage when going into mobile view.
+    In terms of the impact of this rule, when the resolution goes below 1200px, the background
+    image will disappear and be replaced with just a normal color. This was done as the visibility with
+    the background image was poor when viewing with a resolution below 1200px.
+  */
+
 @media (max-width:1200px) {
   body {
     background-image: none;
@@ -34,7 +40,7 @@ body {
 
 
 /*
-  This CSS rule targets the main title of the webpage.
+  DO NOT GRADE THIS ONE! This CSS rule targets the main title of the webpage.
   In terms of the impact of the rule and how it differs from the original, we changed
 the color, size, and font of the title.
 */
@@ -89,9 +95,9 @@ h2 {
 /*
   This rule targets the header for the faculty page.
   This is a completely new CSS rule that is not present in the original.
-  In terms of the impact of the rule, it changes the color, font size, and margins of the header.
+  In terms of the impact of the rule, it changes the color, font size, and margins of the faculty header.
   We reduced the margins for the both the top and bottom of the header so that it would be closer
-to the elements both above and below it.
+  to the elements both above and below it.
 */
 #faculty > h2{
   text-align:center;
@@ -161,6 +167,11 @@ to the elements both above and below it.
   font-family:"Lucida Console", "Courier New", monospace;
 }
 
+/*
+  This CSS rule targets the images of the faculty.
+  In terms of the impact of this rule and how it differs from the original, we changed
+  the images to be circles and add yellow borders to them.
+*/
 img.pic {
   width: 100%;
   border: 8px solid rgb(251, 227, 87);
@@ -190,7 +201,7 @@ img.pic {
 }
 
 /*
-  This CSS rule targets the text in the navigation bar when it is not being hovered over.
+  DO NOT GRADE THIS ONE!!! This CSS rule targets the text in the navigation bar when it is not being hovered over.
   In terms of the impact of the rule and how it differs from the original, we changed the text to a
   different front and also made it blue.
 */
