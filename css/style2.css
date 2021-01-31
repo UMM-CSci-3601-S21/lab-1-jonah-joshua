@@ -25,15 +25,12 @@ body {
   justify-content: center;
 }
 
-@media (max-width:960px) {
+@media (max-width:1200px) {
   body {
     background-image: none;
     background-color: rgb(4, 89, 235);
   }
 }
-
-
-
 
 
 /*
@@ -119,7 +116,7 @@ to the elements both above and below it.
   top:10%;
 }
 
-@media (max-width:960px) {
+@media (max-width:1200px) {
   #tools {
     position:unset;
   }
@@ -144,14 +141,9 @@ to the elements both above and below it.
 
 }
 
-.office {
+.office, .local { /* This is an example of grouping */
   font-family: "Marcellus", serif;
   color:rgb(5, 188, 255);
-}
-
-
-.local {
-  color:rgb(35, 101, 255);
 }
 
 .cloud {
@@ -181,7 +173,6 @@ img.pic {
   left: 0;
   right:0;
   top: 0;
-  height:100%
 
 }
 
@@ -211,7 +202,6 @@ img.pic {
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
   font-family: "Audiowide", sans-serif;
-
 }
 
 /* DON'T GRADE THIS ONE!!! This CSS rule targets the text in the nav bar when someone is hovering over it.
