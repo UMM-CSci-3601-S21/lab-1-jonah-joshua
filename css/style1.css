@@ -70,6 +70,12 @@ h2 {
   padding: 30px;
 }
 
+#tools {
+  background-color: #f8bf14;
+  font-family: "Marcellus", serif;
+}
+
+
 #faculty-list {
   padding-left: 0;
   display: flex;
@@ -89,6 +95,26 @@ h2 {
 
 .office {
   font-family: "Marcellus", serif;
+}
+
+.local {
+  color:maroon;
+}
+
+.cloud {
+  color:black;
+}
+
+.version-control{
+  font-style:italic;
+}
+
+.ide{
+  font-weight:bold;
+}
+
+.testing{
+  font-family:"Lucida Console", "Courier New", monospace;
 }
 
 img.pic {
@@ -136,3 +162,5 @@ img.pic {
   background-color: #d5d6d2;
   padding: 25px;
 }
+
+
