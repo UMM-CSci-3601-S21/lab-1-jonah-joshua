@@ -6,7 +6,234 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+/*
+  This CSS rule targets the body element of the HTML.
+  In terms of the impact of the rule and how it differs from the original,
+we added an image to the background of webpage and made it so that the image stays fixed on the page
+as a person scrolls through it.
+*/
 body {
   padding: 30px;
   background-color: #ffffff;
+  background-image: url("https://hawkesburyit.com.au/wp-content/uploads/2016/04/website-background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex; /* this is the flexbox model. It adds responsive design to its items */
+  flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+  align-items: center; /* These next two properties center the flex items */
+  justify-content: center;
 }
+
+/* This CSS rule targets the background of the webpage when going into mobile view.
+    In terms of the impact of this rule, when the resolution goes below 1200px, the background
+    image will disappear and be replaced with just a normal color. This was done as the visibility with
+    the background image was poor when viewing with a resolution below 1200px.
+  */
+
+@media (max-width:1200px) {
+  body {
+    background-image: none;
+    background-color: rgb(4, 89, 235);
+  }
+}
+
+
+/*
+  DO NOT GRADE THIS ONE! This CSS rule targets the main title of the webpage.
+  In terms of the impact of the rule and how it differs from the original, we changed
+the color, size, and font of the title.
+*/
+#main-title {
+  color:rgb(251, 227, 87);
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+
+}
+
+/*
+  This CSS rule targets the headers of the html page.
+  In terms of the impact of the rule and how it differs from the original, we changed
+  the headers font, color, and adjusted the size.
+  */
+h2 {
+  font-family: "Teko", serif;
+  color:rgb(35, 101, 255);
+  font-size: 170%;
+}
+
+.section { /* This is an example of a class */
+  border-radius: 0px;
+  padding: 20px;
+  border: 5px double;
+  border-color: black;
+  margin: 10px;
+  max-width: 30em;
+}
+
+#courses { /* This is an example of an id */
+  background-color: rgb(251, 227, 87);
+  font-family: "Poppins", serif;
+
+}
+
+#pslo {
+  background-color: #d5d6d2;
+  font-family: "Poppins", serif;
+}
+
+#faculty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border:none;
+  max-width: 50%;
+}
+
+/*
+  This rule targets the header for the faculty page.
+  This is a completely new CSS rule that is not present in the original.
+  In terms of the impact of the rule, it changes the color, font size, and margins of the faculty header.
+  We reduced the margins for the both the top and bottom of the header so that it would be closer
+  to the elements both above and below it.
+*/
+#faculty > h2{
+  text-align:center;
+  color: rgb(251, 227, 87);
+  font-size: 200%;
+  margin-bottom: -5%;
+  margin-top: -1%;
+}
+
+#faculty > ul > li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+#tools {
+  background-color: rgb(251, 227, 87);
+  font-family: "Teko", serif;
+  position:fixed;
+  right:0;
+  top:10%;
+}
+
+@media (max-width:1200px) {
+  #tools {
+    position:unset;
+  }
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
+.name {
+  font-family: "Audiowide", serif;
+  font-size: 2rem;
+  color: rgb(251, 227, 87);
+
+}
+
+.office, .local { /* This is an example of grouping */
+  font-family: "Marcellus", serif;
+  color:rgb(5, 188, 255);
+}
+
+.cloud {
+  color:black;
+}
+
+.version-control{
+  font-style:italic;
+}
+
+.ide{
+  font-weight:bold;
+}
+
+.testing{
+  font-family:"Lucida Console", "Courier New", monospace;
+}
+
+/*
+  This CSS rule targets the images of the faculty.
+  In terms of the impact of this rule and how it differs from the original, we changed
+  the images to be circles and add yellow borders to them.
+*/
+img.pic {
+  width: 100%;
+  border: 8px solid rgb(251, 227, 87);
+  border-radius:100%;
+}
+
+#style-selector {
+  position: fixed;
+  left: 0;
+  right:0;
+  top: 0;
+
+}
+
+
+#style-selector ul { /* This an example of nesting.*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(251, 227, 87);
+
+}
+
+#style-selector li {
+  float: right; /*explore what happens if this is 'right' instead*/
+}
+
+/*
+  DO NOT GRADE THIS ONE!!! This CSS rule targets the text in the navigation bar when it is not being hovered over.
+  In terms of the impact of the rule and how it differs from the original, we changed the text to a
+  different front and also made it blue.
+*/
+#style-selector li a {
+  display: block;
+  text-align: center;
+  color:blue;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* DON'T GRADE THIS ONE!!! This CSS rule targets the text in the nav bar when someone is hovering over it.
+  In terms of the impact of the rule and how it differs from the original, we changed it so that
+  when someone hovers over one of the nav bar options, the colors get swapped, so the background
+  becomes blue and the text becomes yellow.
+*/
+#style-selector li a:hover {
+  background-color: rgb(46, 46, 251);
+  color:rgb(251, 227, 87);
+}
+
+
+#validation {
+  font-size: 0.8rem;
+  font-family: "Poppins", serif;
+  background-color: rgb(251, 227, 87);
+  padding: 25px;
+  border:double;
+  max-width: 65%;
+}
+
+
+
+
